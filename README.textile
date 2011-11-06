@@ -1,0 +1,16 @@
+	<h2 style="color:green;">Installation</h2>
+
+	<p style="color:black;">TwitterBot.jar downloaden.</p>
+
+	<h2 style="color:green;">Verwendung</h2>
+	<h3 style="color:green;">Setup</h3>
+
+	<p style="color:black;">In einer Konsole (Windows: cmd) folgenden Befehl ausf&uuml;hren:
+<pre>java -jar TwitterBot.jar -setup</pre>
+Im einem kurzem Setup wird man gebeten den Bot f&uuml;r einen Account zu autorisieren.</p>
+
+	<h3 style="color:green;">Nutzung</h3>
+
+	<p style="color:black;">In einer Konsole (Windows: cmd) folgenden Befehl ausf&uuml;hren:
+<pre>java -jar TwitterBot.jar</pre>
+Anschlie&szlig;end startet der Bot und sollte sich nach erfolgreichem Setup an die Arbeit begeben.</p>
