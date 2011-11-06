@@ -1,5 +1,8 @@
-	<h2 style="color:green;">Installation</h2>
+	<h2 style="color:green;">Was kann es?</h2>
+	<p style="color:black;">TwitterBot ist ein kleines kompaktes Tool f&uuml;r, wie der Name schon sagt, Twitter. Nach dem Setup wird eine config-Datei angelegt mit den n&ouml; Accountinformation.<br />
+	Das Tool meldet sich &uuml;ber die API von Twitter an und l&auml;d Informationen &uuml;ber den letzten Tweet der an diesen User ging. Nun checkt das Tool automatisch alle 30 Sekunden auf neue @name tweets f&uuml;r diesen User. Anhand einer noch kleinen Logik wird eine passende Antwort generiert die dann an den Absender zur&uuml;ck geht.</p>
 
+	<h2 style="color:green;">Installation</h2>
 	<p style="color:black;">TwitterBot.jar downloaden.</p>
 
 	<h2 style="color:green;">Verwendung</h2>
@@ -10,7 +13,6 @@
 Im einem kurzem Setup wird man gebeten den Bot f&uuml;r einen Account zu autorisieren.</p>
 
 	<h3 style="color:green;">Nutzung</h3>
-
 	<p style="color:black;">In einer Konsole (Windows: cmd) folgenden Befehl ausf&uuml;hren:
 <pre>java -jar TwitterBot.jar</pre>
 Anschlie&szlig;end startet der Bot und sollte sich nach erfolgreichem Setup an die Arbeit begeben.</p>
