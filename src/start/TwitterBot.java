@@ -5,6 +5,7 @@ import controller.*;
 import org.json.*;
 import org.scribe.builder.*;
 import org.scribe.builder.api.*;
+import org.scribe.extractors.AccessTokenExtractor;
 import org.scribe.model.*;
 import org.scribe.oauth.*;
 
@@ -29,15 +30,19 @@ public class TwitterBot {
 				.apiSecret("qVZo7prFZ6QjH1EyWpGbcN0Ciii5fbN0GexCrDM6Zw")
 				.build();
 			
-			if((args.length == 1 && "-setup".equals(args[0]))  ) {
+			Token accessToken = Config.readConfig();
+			
+			if(accessToken == null || (args.length == 1 && "-setup".equals(args[0]))  ) {
 				Token newToken = Config.runSetup(service);
 				Config.writeConfig(newToken);
+				accessToken = Config.readConfig();
 			}
-			Token accessToken = Config.readConfig();
+			if(accessToken == null) throw new ConfigException("Konnte keine Information aus der Konfigurationsdatei laden.");
+			
 			
 			response = User.loginUser(service, accessToken);
 			if(!response.isSuccessful()) {
-				throw new ConfigException();
+				throw new ConfigException("Bitte Setup neu ausführen. Daten wohl nicht mehr aktuell.");
 			} else {
 				try {
 					JSONObject json = new JSONObject(response.getBody());

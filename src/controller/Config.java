@@ -14,6 +14,7 @@ public class Config {
 		
 		Scanner in = new Scanner(System.in);
 		Token requestToken = service.getRequestToken();
+		System.out.println(" -=Setup=- ");
 	    System.out.println("Bitte gehe auf diese Seite, autorisiere die Anwendung und gib den Code hier ein:");
 	    System.out.println(service.getAuthorizationUrl(requestToken));
 	    System.out.print("Code: ");
@@ -51,7 +52,7 @@ public class Config {
 		    	throw new ConfigException("Fehler beim lesen der Konfigurationsdatei.");
 		    }
 	    } catch (FileNotFoundException e) {
-	    	throw new ConfigException("Konfigurationsdatei nicht gefunden. Bitte Setup ausführen.");
+	    	return null;
 	    }
 	}
 }
