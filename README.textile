@@ -1,4 +1,4 @@
-	<h2 style="color:green;">Was kann es?</h2>
+	 <h2 style="color:green;">Was kann es?</h2>
 	
 	<p style="color:black;">TwitterBot ist ein kleines kompaktes Tool f&uuml;r, wie der Name schon sagt, Twitter. Nach dem Setup wird eine config-Datei angelegt mit den n&ouml;tigen Accountinformation.<br />
 	Das Tool meldet sich &uuml;ber die API von Twitter an und l&auml;dt Informationen &uuml;ber den letzten Tweet der an diesen User ging. Nun pr&uuml;ft das Tool automatisch alle 30 Sekunden auf neue @name Tweets f&uuml;r diesen User. Anhand einer noch kleinen Logik wird eine passende Antwort generiert die dann an den Absender zur&uuml;ck geht.<br />
