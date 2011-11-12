@@ -1,5 +1,7 @@
 twitterbot.conf
 twitterbot.bak.conf
-bin/
-.*
-!.gitignore
+bin/*
+classes/*
+reports/*
+TEST-*
+TESTS-*
