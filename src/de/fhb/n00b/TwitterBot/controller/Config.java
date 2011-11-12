@@ -1,4 +1,4 @@
-package controller;
+package de.fhb.n00b.TwitterBot.controller;
 
 import java.io.*;
 import java.util.Scanner;
@@ -6,7 +6,8 @@ import java.util.Scanner;
 import org.scribe.model.*;
 import org.scribe.oauth.*;
 
-import exception.*;
+import de.fhb.n00b.TwitterBot.exception.*;
+
 
 public class Config {
 
@@ -27,7 +28,7 @@ public class Config {
 		
 		File file = new File("twitterbot.conf");
 	     try {
-	       FileWriter writer = new FileWriter(file ,true);
+	       FileWriter writer = new FileWriter(file, false);
 	       writer.write(token.getToken());
 	       writer.write(System.getProperty("line.separator"));
 	       writer.write(token.getSecret());

@@ -1,4 +1,4 @@
-package controller;
+package de.fhb.n00b.TwitterBot.controller;
 
 import org.scribe.model.*;
 import org.scribe.oauth.*;

@@ -1,15 +1,14 @@
-package start;
-
-import controller.*;
+package de.fhb.n00b.TwitterBot.start;
 
 import org.json.*;
 import org.scribe.builder.*;
 import org.scribe.builder.api.*;
-import org.scribe.extractors.AccessTokenExtractor;
 import org.scribe.model.*;
 import org.scribe.oauth.*;
 
-import exception.*;
+import de.fhb.n00b.TwitterBot.controller.*;
+import de.fhb.n00b.TwitterBot.exception.*;
+
 
 public class TwitterBot {
 		

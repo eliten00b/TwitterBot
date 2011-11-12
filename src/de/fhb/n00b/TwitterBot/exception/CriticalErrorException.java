@@ -1,4 +1,4 @@
-package exception;
+package de.fhb.n00b.TwitterBot.exception;
 
 public class CriticalErrorException extends Exception {
 
