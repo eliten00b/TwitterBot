@@ -1,3 +1,4 @@
 twitterbot.conf
 bin/
 .*
+!.gitignore
