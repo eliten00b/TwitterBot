@@ -20,6 +20,6 @@ public class ConfigTest {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
-		assertEquals("ausgabe O.o", writeToken.toString(), readToken.toString());
+		assertEquals("Der gelesene Token ist nicht gleich dem geschriebenen Token.", writeToken.toString(), readToken.toString());
 	}
 }
